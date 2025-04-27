@@ -48,7 +48,7 @@ def add():
 
 
 window = Tk()
-window.geometry("400x600")
+window.geometry("180x350")
 window.title("Simple Calculator")
 icon = PhotoImage(file="icon.png")
 window.iconphoto(True, icon)
@@ -84,5 +84,6 @@ Button(buttons, text="=", width=5, height=2, command=add).grid(row=4, column=1)
 Button(buttons, text="Del", width=5, height=2, command=clear_input).grid(
     row=4, column=2, padx=5, pady=5
 )
+
 
 window.mainloop()

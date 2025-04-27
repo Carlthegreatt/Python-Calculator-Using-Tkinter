@@ -65,10 +65,6 @@ display_widget.pack(pady=5)
 buttons = Frame(window, bg="#2C3E50")
 buttons.pack()
 
-btn1 = Button(
-    buttons, text="1", width=5, height=2, command=lambda: [on_click(1), calculate(1)]
-)
-
 for i, num in enumerate(range(1, 10), start=1):
     Button(
         buttons, text=str(num), width=5, height=2, command=lambda n=num: on_click(n)
@@ -86,7 +82,7 @@ Button(
 ).grid(row=4, column=0)
 Button(buttons, text="=", width=5, height=2, command=add).grid(row=4, column=1)
 Button(buttons, text="Del", width=5, height=2, command=clear_input).grid(
-    row=4, column=2
+    row=4, column=2, padx=5, pady=5
 )
 
 window.mainloop()
